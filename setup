@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# DOTFILES to install
+TARGET_DIR=~/
+DOTFILE_DIR=`pwd`
+
+DOTFILES=(
+  '.zsh_profile'
+  '.zshrc'
+  '.vimrc'
+)
+
+# Remove any existing files and link
+for DOTFILE in ${DOTFILES[@]}; do
+  rm -rf "${TARGET_DIR}/${DOTFILE}" >& /dev/null
+  ln -sf "${DOTFILE_DIR}/${DOTFILE}" "${TARGET_DIR}/${DOTFILE}"
+done
