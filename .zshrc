@@ -8,7 +8,7 @@ function prompt_init {
 
   setopt PROMPT_SUBST
   # Prompts  
-  export PS1='[%F{blue}%n%f]:%1~$(parse_git_branch)$ ' 
+  export PS1='[%F{39}%n%f]:%1~%F{172}$(parse_git_branch)%f$ ' 
   export PS2='> '
   export PS3='+ '
 }
