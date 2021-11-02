@@ -7,7 +7,10 @@ DOTFILE_DIR=`pwd`
 DOTFILES=(
   '.zsh_profile'
   '.zshrc'
+  '.bash_profile'
+  '.bashrc'
   '.vimrc'
+  '.tmux.conf'
 )
 
 # Remove any existing files and link
