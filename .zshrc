@@ -13,12 +13,20 @@ function prompt_init {
   export PS3='+ '
 }
 
-# Aliases
+# Alias
 # ============================================
 function alias_init {
   # LS
-  alias ls='ls -G1'
+  alias ls='ls -p'
+}
+
+# Export Variables
+# ============================================
+function export_var {
+  # Prompt Color Scheme
+  export CLICOLOR=1
 }
 
 prompt_init
+export_var
 alias_init
